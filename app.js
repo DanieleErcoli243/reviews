@@ -64,9 +64,13 @@ window.addEventListener('DOMContentLoaded', () => {
 // aggancio un ascoltatore di eventi al tasto prev
 
 prev.addEventListener('click', () => {
-  console.log('ao, a fata');
+
   // decremento il valore dell'elemento
   currentItem--;
+  // faccio ripartire il conteggio da 4 se vado indietro
+  if (currentItem < 0) {
+    currentItem = 3;
+  }
   // invoco la funzione showPerson
   showPerson(currentItem);
 });
