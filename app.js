@@ -7,7 +7,11 @@ const showPerson = person => {
   author.innerText = item.name;
   job.innerText = item.job;
   info.innerText = item.text;
-}
+};
+
+// dichiaro una funzione per generare un numero casuale tra 0 e 3
+
+const getRandomNumber = () => Math.floor(Math.random() * (max + 1 - min) + min);
 
 // local reviews data
 const reviews = [
@@ -40,6 +44,11 @@ const reviews = [
     text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
   },
 ];
+
+// dichiaro le variabili cogli indici massimo e minimo dell'array
+
+const min = 0;
+const max = 3;
 
 // raccolgo gli elementi dal DOM
 
@@ -86,5 +95,10 @@ next.addEventListener('click', () => {
     currentItem = 0;
   }
   // invoco la funzione showPerson
+  showPerson(currentItem);
+});
+
+random.addEventListener('click', () => {
+  currentItem = getRandomNumber(min, max);
   showPerson(currentItem);
 });
