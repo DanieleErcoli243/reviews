@@ -58,5 +58,5 @@ let currentItem = 0;
 // aggancio un ascoltatore di eventi alla pagina
 
 window.addEventListener('DOMContentLoaded', () => {
-  showPerson();
+  showPerson(currentItem);
 });
