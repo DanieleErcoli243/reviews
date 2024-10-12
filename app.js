@@ -60,3 +60,13 @@ let currentItem = 0;
 window.addEventListener('DOMContentLoaded', () => {
   showPerson(currentItem);
 });
+
+// aggancio un ascoltatore di eventi al tasto prev
+
+prev.addEventListener('click', () => {
+  console.log('ao, a fata');
+  // decremento il valore dell'elemento
+  currentItem--;
+  // invoco la funzione showPerson
+  showPerson(currentItem);
+});
