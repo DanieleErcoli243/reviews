@@ -47,5 +47,11 @@ let currentItem = 0;
 // aggancio un ascoltatore di eventi alla pagina
 
 window.addEventListener('DOMContentLoaded', () => {
-
+  // dichiaro una variabile col primo elemento dell'array che voglio mostrare all'avvio
+  const item = reviews[currentItem];
+  // compilo la scheda dinamicamente
+  img.src = item.img;
+  author.innerText = item.name;
+  job.innerText = item.job;
+  info.innerText = item.text;
 })
