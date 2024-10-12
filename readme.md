@@ -1,0 +1,2 @@
+Our Reviews
+This projects aims to show some reviews that you can dynamically switch by clicking on the button at the bottom of the section. I created it by following John Smilga's tutorial for freeCodeCamp. 
