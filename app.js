@@ -43,3 +43,9 @@ const random = document.querySelector('.random-btn');
 // imposto il primo elemento
 
 let currentItem = 0;
+
+// aggancio un ascoltatore di eventi alla pagina
+
+window.addEventListener('DOMContentLoaded', () => {
+
+})
