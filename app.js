@@ -74,3 +74,17 @@ prev.addEventListener('click', () => {
   // invoco la funzione showPerson
   showPerson(currentItem);
 });
+
+// aggancio un ascoltatore di eventi al tasto next
+
+next.addEventListener('click', () => {
+
+  // decremento il valore dell'elemento
+  currentItem++;
+  // faccio ripartire il conteggio da 4 se vado indietro
+  if (currentItem > 3) {
+    currentItem = 0;
+  }
+  // invoco la funzione showPerson
+  showPerson(currentItem);
+});
